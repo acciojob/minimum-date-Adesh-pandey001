@@ -1,5 +1,10 @@
 function minDate(dates) {
-  //write you code here
+  function minDate(dates) {
+  // Use the spread operator (...) to find the minimum date string
+  // Since dates are in "YYYY/MM/DD" format, string comparison works
+  return [...dates].reduce((min, current) => current < min ? current : min);
+}
+
 }
 
 // Do not change the code
